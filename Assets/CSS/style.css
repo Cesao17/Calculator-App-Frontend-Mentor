@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@100;700&family=League+Spartan:wght@700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:wght@100;300;400;500;700&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+html,
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--mainbkgd);
+  font-weight: 700;
+}
+
+:root {
+  --mainbkgd: hsl(222, 26%, 31%);
+  --togglebkgd: hsl(223, 31%, 20%);
+  --circlebkgdcolor: hsl(6, 63%, 50%);
+  --screenbkgd: hsl(224, 36%, 15%);
+  --keypadbkgdcolor: hsl(223, 31%, 20%);
+  --keyshadow: hsl(224, 28%, 35%);
+  --numactive:hsl(0, 0%, 100%);
+  --keycolor: hsl(30, 25%, 89%);
+  --keyshadow: hsl(28, 16%, 65%);
+  --keydellresetcolor: hsl(225, 21%, 49%);
+  --keydellresetcolorshadow: hsl(224, 28%, 35%);
+  --keyequalcolor: hsl(6, 63%, 50%);
+  --keyequalshadow: hsl(6, 70%, 34%);
+  --textcolor: hsl(0, 0%, 100%);
+  --cabcolor:hsl(0, 0%, 100%);
+  --whitecolor: hsl(0, 0%, 100%);
+}
+
+.theme2{
+  --mainbkgd:hsl(0, 0%, 90%);
+  --togglebkgd:hsl(0, 5%, 81%);
+  --circlebkgdcolor: hsl(25, 98%, 40%);
+  --screenbkgd: hsl(0, 0%, 93%);
+  --keypadbkgdcolor: hsl(0, 5%, 81%);
+  --keyshadow: hsl(35, 11%, 61%);
+  --keycolor: hsl(45, 7%, 89%);
+  --keydellresetcolor: hsl(185, 42%, 37%);
+  --dellactive: hsl(185, 46%, 50%);
+  --keydellresetcolorshadow: hsl(185, 58%, 25%);
+  --keyequalcolor: hsl(25, 98%, 40%);
+  --keyequalactive: hsl(25, 83%, 53%);
+  --keyequalshadow: hsl(25, 99%, 27%);
+  --textcolor: hsl(60, 10%, 19%);
+  --cabcolor: hsl(60, 10%, 19%); 
+  --numactive: hsl(0, 0%, 100%);
+  --whitecolor: hsl(0, 0%, 100%);
+}
+
+.theme3{
+  --mainbkgd: hsl(268, 75%, 9%);
+  --togglebkgd: hsl(268, 71%, 12%);
+  --circlebkgdcolor: hsl(176, 100%, 44%);
+  --screenbkgd: hsl(268, 71%, 12%);
+  --keycolor: hsl(268, 47%, 21%);
+  --keyshadow: hsl(290, 70%, 36%);
+  --keypadbkgdcolor: hsl(268, 71%, 12%);
+  --keybkgd3: hsl(268, 47%, 21%);
+  --numactive:hsl(268, 62%, 39%);
+  --keyshadow3:  hsl(290, 70%, 36%);
+  --textcolor: hsl(52, 100%, 62%);
+  --whitecolor: hsl(0, 0%, 100%);
+  --cabcolor:hsl(52, 100%, 62%);
+  --numcolor:hsl(52, 100%, 62%);
+  --keydellresetcolor: hsl(281, 89%, 26%);
+  --keydellresetcolorshadow: hsl(285, 91%, 52%);
+  --dellactive: hsl(281, 73%, 50%);
+  --keyequalcolor: hsl(176, 100%, 44%);
+  --keyequalactive: hsl(177, 92%, 70%);
+  --keyequalshadow: hsl(177, 92%, 70%);
+
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+
+.header {
+  display: flex;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.title h3 {
+  font-size: 30px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.title h3, label, span {
+  color: var(--cabcolor);
+}
+
+.labels, span{
+  font-size: 13px;
+}
+
+/*Switch btn*/
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.labels {
+  display: flex;
+  justify-content: end;
+}
+
+.labels label {
+  margin-left: 9px;
+}
+
+.labels label:last-child {
+  margin-right: 10px;
+}
+.switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch span {
+  margin-right: 10px;
+}
+
+.radios {
+  background: var(--togglebkgd);
+  width: 60px;
+  height: 25px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.radio {
+  cursor: pointer;
+  margin-left: 5px;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radio:first-child {
+  margin-left: -5px;
+}
+.radio:last-child {
+  margin-right: -5px;
+}
+
+.radio:before {
+  content: "";
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--circlebkgdcolor);
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.radio:checked:before {
+  opacity: 1;
+}
+.radio:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+/*Screen*/
+
+.screen {
+  margin: 25px;
+
+}
+
+.screen input {
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--screenbkgd);
+  border: none;
+  color: var(--textcolor);
+  text-align: end;
+  font-size: 50px;
+  padding: 30px;
+}
+
+.screen input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+/*Buttons*/
+
+.button {
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: var(--keypadbkgdcolor);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.num {
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  color: var(--numcolor);
+  background-color: var(--keycolor);
+  box-shadow: inset -1px -3px var(--keyshadow);
+}
+
+
+.num:active{
+  background: var(--numactive);
+}
+
+.del {
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: var(--keydellresetcolor);
+  box-shadow: inset -1px -3px var(--keydellresetcolorshadow);
+  color: var(--keycolor);
+}
+
+#del{
+  color: var(--whitecolor);
+}
+
+.del:active{
+  background: var(--dellactive);
+}
+
+.reset {
+  cursor: pointer;
+  margin: 10px;
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  background-color: var(--keydellresetcolor);
+  box-shadow: inset -1px -3px var(--keydellresetcolorshadow);
+  color: var(--keycolor);
+}
+#reset{
+  color: var(--whitecolor);
+}
+
+.reset:active{
+  background: var(--dellactive);
+}
+
+.equal {
+  cursor: pointer;
+  width: 220px;
+  margin: 10px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: var(--keyequalcolor);
+  box-shadow: inset -1px -3px var(--keyequalshadow);
+  color: var(--keycolor);
+}
+
+.equal:active{
+  background: var(--keyequalactive);
+}
