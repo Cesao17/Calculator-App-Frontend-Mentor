@@ -82,32 +82,36 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 30px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  margin: auto auto;
+  /* margin: auto auto; */
 }
 
 .header {
   display: flex;
+  max-width: 500px;
+  width: 100%;
 }
 .title {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
+
 }
 
 .title h3 {
   font-size: 30px;
 }
 
-.right {
+/* .right {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-}
+} */
 
 .title h3, label, span {
   color: var(--cabcolor);
@@ -118,10 +122,11 @@ body {
 }
 
 /*Switch btn*/
-.right {
+
+/* .right {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .labels {
   display: flex;
@@ -135,13 +140,14 @@ body {
 .labels label:last-child {
   margin-right: 10px;
 }
+
 .switch {
   display: flex;
   align-items: center;
 }
 
 .switch span {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .radios {
@@ -160,25 +166,26 @@ body {
   margin-left: 5px;
   appearance: none;
   width: 10px;
-  height: 10px;
+  /* height: 10px; */
   border-radius: 50%;
-  outline: none;
-  position: relative;
+  /* outline: none; */
+  /* position: relative; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
+
 .radio:first-child {
   margin-left: -5px;
-}
+} 
 .radio:last-child {
   margin-right: -5px;
 }
 
 .radio:before {
-  content: "";
+  content: " ";
   position: relative;
-  height: 10px;
+  height: 12px;
   width: 10px;
   border-radius: 50%;
   background-color: var(--circlebkgdcolor);
@@ -187,22 +194,24 @@ body {
 }
 
 .radio:checked:before {
-  opacity: 1;
+  opacity: 10;
 }
+
 .radio:focus {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
 }
 
 /*Screen*/
 
 .screen {
-  margin: 25px;
+  padding: 0;
+  margin: 20px auto;
 
 }
 
 .screen input {
-  width: 500px;
-  height: 100px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 10px;
   background-color: var(--screenbkgd);
   border: none;
@@ -222,7 +231,8 @@ body {
 
 .button {
   padding: 10px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 500px;
   background-color: var(--keypadbkgdcolor);
   border-radius: 10px;
@@ -274,7 +284,8 @@ body {
 .reset {
   cursor: pointer;
   margin: 10px;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 60px;
   border-radius: 10px;
   border: none;
@@ -293,7 +304,8 @@ body {
 
 .equal {
   cursor: pointer;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   margin: 10px;
   height: 60px;
   border: none;
@@ -306,4 +318,232 @@ body {
 
 .equal:active{
   background: var(--keyequalactive);
+}
+
+
+/*media*/
+
+
+@media screen and (max-width: 600px) {
+
+
+
+  .button {
+    width: 100%;
+    height: 500px;
+  }
+
+  .num {
+    width: 100px;
+    height: 60px; 
+  }
+
+  .del{
+    width: 100px;
+    height: 60px;
+  }
+
+  .reset {
+    width: 220px;
+  }
+
+  .equal {
+    width: 220px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 590px) {
+
+
+  .num {
+    width: 90px;
+    height: 60px; 
+  }
+
+  .del{
+    width: 90px;
+    height: 60px;
+  }
+
+  .reset {
+    width: 200px;
+  }
+
+  .equal {
+    width: 200px;
+  }
+
+
+}
+
+@media screen and (max-width: 519px) {
+
+  .button {
+    width: 100%;
+    margin: 0;
+    
+  }
+
+  .num {
+    width: 100%;
+    max-width: 80px;
+    height: 60px; 
+  }
+
+  .del{
+    width: 100%;
+    max-width: 80px;
+    height: 60px;
+  }
+
+  .reset {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .equal {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  .num {
+    width: 100%;
+    max-width: 70px;
+    height: 60px; 
+  }
+
+  .del{
+    width: 100%;
+    max-width: 70px;
+    height: 60px;
+  }
+
+  .reset {
+    width: 100%;
+    max-width: 170px;
+  }
+
+  .equal {
+    width: 100%;
+    max-width: 170px;
+  }
+}
+
+
+@media screen and (max-width: 369px) {
+
+
+  .button {
+    width: 100%;
+    height: 500px;
+  }
+
+  .num {
+    width: 45px;
+    height: 50px; 
+  }
+
+  .del{
+    width: 45px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .reset {
+    font-size: 15px;
+    width: 110px;
+  }
+
+  .equal {
+    font-size: 20px;
+    width: 110px;
+    font-size: 15px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 359px) {
+
+  .button {
+    width: 100%;
+    height: 500px;
+  }
+
+  .num {
+    width: 40px;
+    height: 50px; 
+  }
+
+  .del{
+    width: 40px;
+    height: 50px;
+  }
+
+  .reset {
+    width: 100px;
+  }
+
+  .equal {
+    width: 100px;
+  }
+
+
+}
+
+@media screen and (max-width: 334px) {
+
+  .button {
+    margin: 0;
+    padding: 0;
+  }
+
+  .num {
+    width: 40px;
+    height: 50px; 
+  }
+
+  .del{
+    width: 40px;
+    height: 50px;
+  }
+
+  .reset {
+    width: 100px;
+  }
+
+  .equal {
+    width: 100px;
+  }
+
+
+}
+@media screen and (max-width: 304px) {
+
+  .button {
+    margin: 0;
+    width: 240px;
+  }
+
+  .btn{
+    width: 40px;
+    height: 40px;
+  }
+
+  .reset {
+    width: 100px;
+  }
+
+  .equal {
+    width: 100px;
+  }
+
+
 }
