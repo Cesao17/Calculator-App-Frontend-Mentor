@@ -1,4 +1,4 @@
-# ?? Calculator App
+# :abacus: Calculator App
 
 <img src="./Assets/calculator-app-main/design/desktop-design-theme-1.jpg" alt="Exemplo imagem">
 
