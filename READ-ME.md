@@ -4,7 +4,7 @@
 
 > Demonstação visual da calculadora.
 
-### ?? Ajustes e melhorias
+### :spiral_notepad: Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
@@ -14,9 +14,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão voltada
 - [ ] Documentação.
 
 
-## ?? Colaboradores
+## :smiley: Colaboradores
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+Agradecemos à seguinte pessoa por contribuír para este projeto:
 
 <table>
   <tr>
@@ -31,10 +31,10 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   </tr>
 </table>
 
-## ?? Seja um dos contribuidores
+## :handshake: Seja um dos contribuidores
 
 Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
 
-## ?? Licença
+## :memo: Licença
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
