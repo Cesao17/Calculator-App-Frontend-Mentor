@@ -326,8 +326,6 @@ body {
 
 @media screen and (max-width: 600px) {
 
-
-
   .button {
     width: 100%;
     height: 500px;
@@ -350,41 +348,19 @@ body {
   .equal {
     width: 220px;
   }
-
-
 }
 
-
-@media screen and (max-width: 590px) {
-
-
-  .num {
-    width: 90px;
-    height: 60px; 
-  }
-
-  .del{
-    width: 90px;
-    height: 60px;
-  }
-
-  .reset {
-    width: 200px;
-  }
-
-  .equal {
-    width: 200px;
-  }
+@media screen and (max-width: 570px) {
 
 
+.screen input {
+  width: 100%;
+  max-width: 450px;
 }
-
-@media screen and (max-width: 519px) {
 
   .button {
     width: 100%;
-    margin: 0;
-    
+    max-width: 450px;
   }
 
   .num {
@@ -426,18 +402,42 @@ body {
 
   .reset {
     width: 100%;
-    max-width: 170px;
+    max-width: 160px;
   }
 
   .equal {
     width: 100%;
-    max-width: 170px;
+    max-width: 160px;
+  }
+}
+
+@media screen and (max-width: 439px) {
+
+  .num {
+    width: 100%;
+    max-width: 60px;
+    height: 60px; 
+  }
+
+  .del{
+    width: 100%;
+    max-width: 60px;
+    height: 60px;
+  }
+
+  .reset {
+    width: 100%;
+    max-width: 140px;
+  }
+
+  .equal {
+    width: 100%;
+    max-width: 140px;
   }
 }
 
 
-@media screen and (max-width: 369px) {
-
+@media screen and (max-width: 399px) {
 
   .button {
     width: 100%;
@@ -445,24 +445,27 @@ body {
   }
 
   .num {
-    width: 45px;
-    height: 50px; 
+    width: 100%;
+    max-width: 50px;
+    height: 60px;  
   }
 
   .del{
-    width: 45px;
-    height: 50px;
     font-size: 15px;
+    width: 100%;
+    max-width: 50px;
+    height: 60px; 
   }
 
   .reset {
     font-size: 15px;
-    width: 110px;
+    width: 100%;
+    max-width: 120px;
   }
 
   .equal {
     font-size: 20px;
-    width: 110px;
+    width: 120px;
     font-size: 15px;
   }
 
