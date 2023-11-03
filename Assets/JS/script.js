@@ -34,7 +34,7 @@ screen.addEventListener('keydown', function (ev) {
 document.getElementById('equal').addEventListener('click', calculate)
 
 function calculate() {
-    const result = eval(screen.value)
+    const result = eval(screen.value).toFixed(2)
     screen.value = result
 }
 
